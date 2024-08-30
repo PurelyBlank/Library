@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main--container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+.main--side-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #a4bb8a;
+}
+
+.side-navbar--logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0px 20px 0px;
+}
+
+.side-navbar--logo img {
+    width: 40px;
+}
+
+h1 {
+    font-size: 2.813rem;
+}
+
+.add-book {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.add-book input[type=text], input[type=number] {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: #a4bb8a;
+    min-width: 5rem;
+    max-width: 25rem;
+    width: 17.188rem;
+    font-size: 1.063rem;
+}
+
+.add-book input[type=number]::-webkit-outer-spin-button,
+.add-book input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.add-book input[type=text]:focus, 
+.add-book input[type=number]:focus {
+    border-bottom-color: #bf7d31;
+    outline: none;
+}
+
+.add-book input[type=text]:valid, 
+.add-book input[type=number]:valid {
+    border-bottom-color: green;
+}
+
+.add-book input[type=number] {
+    appearance: textfield; /* Firefox */
+}
+
+.book-read {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.add-book input[type=checkbox] {
+    background-color: #a4bb8a;
+    border: 2px solid #000;
+    padding: 2px;
+    width: 1.5em;
+    height: 1.5em;
+    -webkit-appearance: none;  /* Remove default styling in WebKit browsers */
+    -moz-appearance: none;     /* Remove default styling in Firefox */
+    appearance: none;          /* Remove default styling in modern browsers */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.add-book input[type=checkbox]:checked {
+    background-color: #2c842e; /* Green background when checked */
+}
+
+.book-submit > input[type=submit] {
+    padding: 15px 50px;
+    background-color: #52b154;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+
+.book-submit > input[type=submit]:hover {
+    background-color: #377238;
+}
