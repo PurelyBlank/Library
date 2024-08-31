@@ -52,7 +52,7 @@ h1 {
     min-width: 5rem;
     max-width: 25rem;
     width: 17.188rem;
-    font-size: 1.063rem;
+    font-size: 1.2rem;
 }
 
 .add-book input[type=number]::-webkit-outer-spin-button,
@@ -121,5 +121,40 @@ h1 {
     display: flex;
     gap: 10px;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+.delete-books {
+    padding: 10px 40px;
+    font-size: 1.2rem;
+    background-color: rgba(207, 29, 29, 0.881);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color ease-in 0.3s;
+}
+
+.delete-books:hover {
+    background-color: rgba(176, 24, 24, 0.881);
+}
+
+table {
+    margin: auto;
+    table-layout: fixed;
+    width: 80%;
+    border-collapse: collapse;
+    border: 3px solid #52b154;
+    background-color: #52b154;
+    font-size: 1.2rem;
+}
+
+th {
+    padding: 15px;
 }
