@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="./script.js"></script> 
 </head>
 <body>
    <main class="main--container">
@@ -17,7 +16,7 @@
                 <img src="./library-logo.svg" alt="Library Logo">
                 <h1>Library</h1>
             </div>
-            <form action="" class="add-book">
+            <form action="" id="book-form" class="add-book">
                 <div class="book-title"><input id="book-title" name="title" type="text" placeholder="Title" required></div>
                 <div class="book-author"><input id="book-author" name="author" type="text" placeholder="Author" required></div>
                 <div class="book-pages"><input id="book-pages" name="pages" type="number" placeholder="Pages" required></div>
@@ -30,7 +29,7 @@
                 <h4 class="books-read" id="books-read">BOOKS READ : 0</h4>
                 <h4 class="books-unread" id="books-unread">BOOKS UNREAD : 0</h4>
                 <h4 class="total-books" id="total-books">TOTAL BOOKS : 0</h4>
-                <button class="delete-books">DELETE ALL</button>
+                <button id="delete-all-books" class="delete-books">DELETE ALL</button>
             </div>
             <table id="main--books-table" class="main--table">
                 <!-- Table of books  -->
@@ -44,5 +43,6 @@
             </table>
         </div>
    </main> 
+    <script src="./script.js"></script> 
 </body>
 </html>

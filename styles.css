@@ -142,20 +142,48 @@ h4 {
     transition: background-color ease-in 0.3s;
 }
 
-.delete-books:hover {
-    background-color: rgba(176, 24, 24, 0.881);
-}
-
 table {
     margin: auto;
     table-layout: fixed;
     width: 80%;
     border-collapse: collapse;
-    border: 3px solid #52b154;
-    background-color: #52b154;
+    /* border: 3px solid #52b154; */
     font-size: 1.2rem;
 }
 
-th {
+th, td {
     padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #52b154;
+}
+
+td {
+    border-bottom: 3px dotted #52b154;
+}
+
+#remove-book {
+    background-color: rgba(207, 29, 29, 0.881);
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: background-color ease-in 0.3s;
+}
+
+.delete-books:hover, #remove-book:hover {
+    background-color: rgba(176, 24, 24, 0.881);
+}
+
+.been-read {
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
 }
